@@ -1,1 +1,40 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  /* Шрифты и типографика */
+  --main-font-family: "Inter-Variable";
+  --accent-font-family: "PressStart2P-Regular";
+  --main-font-weight: 400;
+  --title-font-weight: 700;
+  --font-size: 18px;
+  --font-size-article-label: 14px;
+
+  /* Фоны и градиенты */
+  --background: repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      180deg,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+
+  /* Цвета */
+  --border-color: #000;
+  --background-article-color: #fff;
+  --text-shadow-color: #fff;
+  --stroke-color: #fff;
+
+  /* Размеры и адаптив */
+  --clamp: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
+
+  /* Размеры иконок */
+  --icon-size-small: 21px;
+  --icon-size-medium: 28px;
+  --icon-size-large: 39px;
+}

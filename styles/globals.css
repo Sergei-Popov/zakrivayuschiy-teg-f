@@ -6,6 +6,8 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -32,9 +34,29 @@ a {
 
 button,
 input {
+  margin: 0;
+  padding: 0;
+  outline: none;
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
+}
+
+button {
+  border: 2px solid var(--border-color, #000);
+  font-family: var(--accent-font-family);
+  background-color: var(--background-article-color);
+  cursor: pointer;
+  appearance: none;
+}
+
+button:focus {
+  box-shadow: 2px 2px 0 1px #000;
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--border-color);
 }
 
 ul,
@@ -44,10 +66,10 @@ ol {
 
 .visually-hidden {
   position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
   clip-path: inset(50%);
   white-space: nowrap;
 }
