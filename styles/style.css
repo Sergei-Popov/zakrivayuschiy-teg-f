@@ -79,6 +79,7 @@
 
 .article__image-box {
   position: relative;
+  overflow: hidden;
 }
 
 .article__label {
@@ -233,6 +234,40 @@ dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
+/*************ФИЛЬТРАЦИЯ*************/
+.filter_saturate {
+  filter: saturate(150%);
+}
+
+.filter_contrast {
+  filter: contrast(130%);
+}
+
+.filter_saturate_contrast {
+  filter: saturate(130%) contrast(120%);
+}
+
+.filter_brightness {
+  filter: brightness(170%);
+}
+
+.filter_sepia {
+  filter: sepia(25%);
+}
+
+.filter_grayscale {
+  filter: grayscale(70%);
+}
+
+.filter_hue_rotate {
+  filter: hue-rotate(180deg);
+}
+
+.filter_multi_filters {
+  filter: contrast(120%) brightness(80%) saturate(80%);
+}
+
+/*************АДАПТИВ*************/
 @media screen and (max-width: 375px) {
   .header {
     margin-block-end: 100px;
