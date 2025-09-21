@@ -145,11 +145,9 @@
 
 .card__icon-button:focus {
   box-shadow: none;
-  outline: none;
 }
 
 .card__icon-button:focus:focus-visible {
-  border: none;
   border: 2px solid var(--border-color);
 }
 
