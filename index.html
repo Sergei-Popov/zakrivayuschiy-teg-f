@@ -45,6 +45,7 @@
             <div class="button__block">
               <button type="button" class="card__icon-button" title="Like">
                 <svg
+                  aria-hidden="true"
                   class="like-icon"
                   width="39"
                   height="36"
@@ -113,6 +114,7 @@
             <div class="button__block">
               <button type="button" class="card__icon-button" title="Like">
                 <svg
+                  aria-hidden="true"
                   class="like-icon"
                   width="39"
                   height="36"
@@ -178,6 +180,7 @@
             <div class="button__block">
               <button type="button" class="card__icon-button" title="Like">
                 <svg
+                  aria-hidden="true"
                   class="like-icon"
                   width="39"
                   height="36"
@@ -245,6 +248,7 @@
             <div class="button__block">
               <button type="button" class="card__icon-button" title="Like">
                 <svg
+                  aria-hidden="true"
                   class="like-icon"
                   width="39"
                   height="36"
@@ -313,6 +317,7 @@
             <div class="button__block">
               <button type="button" class="card__icon-button" title="Like">
                 <svg
+                  aria-hidden="true"
                   class="like-icon"
                   width="39"
                   height="36"
@@ -378,6 +383,7 @@
             <div class="button__block">
               <button type="button" class="card__icon-button" title="Like">
                 <svg
+                  aria-hidden="true"
                   class="like-icon"
                   width="39"
                   height="36"
@@ -445,6 +451,7 @@
             <div class="button__block">
               <button type="button" class="card__icon-button" title="Like">
                 <svg
+                  aria-hidden="true"
                   class="like-icon"
                   width="39"
                   height="36"
@@ -514,6 +521,7 @@
             <div class="button__block">
               <button type="button" class="card__icon-button" title="Like">
                 <svg
+                  aria-hidden="true"
                   class="like-icon"
                   width="39"
                   height="36"
@@ -560,16 +568,18 @@
         type="button"
         onclick="window['dialog-id'].showModal()"
         aria-controls="dialog-id"
-        class="button button-download"
+        class="button button-download decorated__button"
       >
         <svg
           class="floppy"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 39 39"
         >
-          <use href="./svg/floppy.svg"></use>
+          <use href="./svg/floppy.svg#floppy"></use>
         </svg>
-        <span class="button__text">Сохранить на память</span>
+        <span class="button__text decorated__button-text"
+          >Сохранить на память</span
+        >
       </button>
       <dialog class="dialog-download" id="dialog-id">
         <div class="dialog-container">
@@ -578,16 +588,18 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 39 39"
           >
-            <use href="./svg/floppy.svg"></use>
+            <use href="./svg/floppy.svg#floppy"></use>
           </svg>
           <p class="dialog__title">Вставьте дискету, чтобы продолжить</p>
         </div>
         <button
           type="button"
           onclick="window['dialog-id'].close()"
-          class="button button-download-agree"
+          class="button button-download-agree decorated__button"
         >
-          <span class="button__text button-agree">ок</span>
+          <span class="button__text button-agree decorated__button-text"
+            >ок</span
+          >
         </button>
       </dialog>
     </main>

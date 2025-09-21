@@ -95,5 +95,4 @@
 /* Состояния фокуса */
 .card__icon-button:focus-visible {
   outline-color: black;
-  transition: outline-color 0.3s linear;
 }
